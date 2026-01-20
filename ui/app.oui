@@ -1,0 +1,368 @@
+// OxideKit Marketing Website
+// Landing page for oxidekit.com
+
+app OxideKitSite {
+    Column {
+        width: fill
+        height: fill
+        background: "#030712"
+
+        // Navigation
+        Row {
+            width: fill
+            height: 72
+            padding: 24
+            align: center
+            justify: space_between
+            background: "#030712"
+
+            // Logo
+            Text {
+                content: "OxideKit"
+                size: 24
+                color: "#FFFFFF"
+            }
+
+            // Nav links
+            Row {
+                gap: 32
+
+                Text {
+                    content: "Features"
+                    size: 14
+                    color: "#9CA3AF"
+                }
+
+                Text {
+                    content: "Docs"
+                    size: 14
+                    color: "#9CA3AF"
+                }
+
+                Text {
+                    content: "Pricing"
+                    size: 14
+                    color: "#9CA3AF"
+                }
+
+                Text {
+                    content: "GitHub"
+                    size: 14
+                    color: "#9CA3AF"
+                }
+            }
+
+            // CTA
+            Container {
+                padding: 12
+                background: "#3B82F6"
+                radius: 8
+
+                Text {
+                    content: "Get Started"
+                    size: 14
+                    color: "#FFFFFF"
+                }
+            }
+        }
+
+        // Hero Section
+        Column {
+            width: fill
+            padding: 80
+            align: center
+            gap: 24
+
+            // Badge
+            Container {
+                padding: 8
+                background: "#1E293B"
+                radius: 16
+
+                Text {
+                    content: "v0.1.0 Now Available"
+                    size: 12
+                    color: "#60A5FA"
+                }
+            }
+
+            // Main headline
+            Text {
+                content: "Build Native Desktop Apps"
+                size: 56
+                color: "#FFFFFF"
+                align: center
+            }
+
+            Text {
+                content: "Without the Bloat"
+                size: 56
+                color: "#3B82F6"
+                align: center
+            }
+
+            // Subheadline
+            Container {
+                max_width: 600
+
+                Text {
+                    content: "OxideKit is a Rust-native application platform. No browser, no JavaScript, no bundlers. Just fast, native apps."
+                    size: 20
+                    color: "#9CA3AF"
+                    align: center
+                }
+            }
+
+            // CTA buttons
+            Row {
+                gap: 16
+                margin_top: 24
+
+                Container {
+                    padding: 16
+                    background: "#3B82F6"
+                    radius: 8
+
+                    Text {
+                        content: "Get Started Free"
+                        size: 16
+                        color: "#FFFFFF"
+                    }
+                }
+
+                Container {
+                    padding: 16
+                    background: "#1E293B"
+                    radius: 8
+
+                    Text {
+                        content: "View on GitHub"
+                        size: 16
+                        color: "#FFFFFF"
+                    }
+                }
+            }
+
+            // Install snippet
+            Container {
+                padding: 16
+                background: "#111827"
+                radius: 8
+                margin_top: 32
+
+                Text {
+                    content: "cargo install oxide-cli && oxide new my-app"
+                    size: 14
+                    color: "#10B981"
+                }
+            }
+        }
+
+        // Features Section
+        Column {
+            width: fill
+            padding: 80
+            background: "#0F172A"
+            align: center
+            gap: 48
+
+            Text {
+                content: "Why OxideKit?"
+                size: 36
+                color: "#FFFFFF"
+            }
+
+            Row {
+                gap: 24
+                max_width: 1200
+
+                // Feature 1
+                Container {
+                    padding: 32
+                    background: "#1E293B"
+                    radius: 12
+                    flex: 1
+
+                    Column {
+                        gap: 16
+
+                        Text {
+                            content: "Native Performance"
+                            size: 20
+                            color: "#FFFFFF"
+                        }
+
+                        Text {
+                            content: "GPU-accelerated rendering with wgpu. Your apps start instantly and run smoothly. No browser overhead, no JavaScript VM."
+                            size: 14
+                            color: "#9CA3AF"
+                        }
+                    }
+                }
+
+                // Feature 2
+                Container {
+                    padding: 32
+                    background: "#1E293B"
+                    radius: 12
+                    flex: 1
+
+                    Column {
+                        gap: 16
+
+                        Text {
+                            content: "Hot Reload"
+                            size: 20
+                            color: "#FFFFFF"
+                        }
+
+                        Text {
+                            content: "State-preserving hot reload. Change your UI and see results instantly without losing application state."
+                            size: 14
+                            color: "#9CA3AF"
+                        }
+                    }
+                }
+
+                // Feature 3
+                Container {
+                    padding: 32
+                    background: "#1E293B"
+                    radius: 12
+                    flex: 1
+
+                    Column {
+                        gap: 16
+
+                        Text {
+                            content: "Secure by Default"
+                            size: 20
+                            color: "#FFFFFF"
+                        }
+
+                        Text {
+                            content: "Built-in permission system and network allowlists. Your users know exactly what your app can access."
+                            size: 14
+                            color: "#9CA3AF"
+                        }
+                    }
+                }
+            }
+
+            Row {
+                gap: 24
+                max_width: 1200
+
+                // Feature 4
+                Container {
+                    padding: 32
+                    background: "#1E293B"
+                    radius: 12
+                    flex: 1
+
+                    Column {
+                        gap: 16
+
+                        Text {
+                            content: "Declarative UI"
+                            size: 20
+                            color: "#FFFFFF"
+                        }
+
+                        Text {
+                            content: "Clean .oui syntax for describing your UI. Components, layouts, and styling in one place."
+                            size: 14
+                            color: "#9CA3AF"
+                        }
+                    }
+                }
+
+                // Feature 5
+                Container {
+                    padding: 32
+                    background: "#1E293B"
+                    radius: 12
+                    flex: 1
+
+                    Column {
+                        gap: 16
+
+                        Text {
+                            content: "Extension Ecosystem"
+                            size: 20
+                            color: "#FFFFFF"
+                        }
+
+                        Text {
+                            content: "Plugins for UI components, native capabilities, and themes. Install with oxide add."
+                            size: 14
+                            color: "#9CA3AF"
+                        }
+                    }
+                }
+
+                // Feature 6
+                Container {
+                    padding: 32
+                    background: "#1E293B"
+                    radius: 12
+                    flex: 1
+
+                    Column {
+                        gap: 16
+
+                        Text {
+                            content: "Cross-Platform"
+                            size: 20
+                            color: "#FFFFFF"
+                        }
+
+                        Text {
+                            content: "Build once, deploy to macOS, Windows, Linux. Mobile support coming soon."
+                            size: 14
+                            color: "#9CA3AF"
+                        }
+                    }
+                }
+            }
+        }
+
+        // Footer
+        Row {
+            width: fill
+            height: 80
+            padding: 24
+            background: "#030712"
+            align: center
+            justify: space_between
+
+            Text {
+                content: "2025 OxideKit. Open source under Apache 2.0."
+                size: 14
+                color: "#6B7280"
+            }
+
+            Row {
+                gap: 24
+
+                Text {
+                    content: "Docs"
+                    size: 14
+                    color: "#9CA3AF"
+                }
+
+                Text {
+                    content: "GitHub"
+                    size: 14
+                    color: "#9CA3AF"
+                }
+
+                Text {
+                    content: "Discord"
+                    size: 14
+                    color: "#9CA3AF"
+                }
+            }
+        }
+    }
+}

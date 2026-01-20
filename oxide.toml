@@ -1,0 +1,24 @@
+# OxideKit Marketing Website
+# Built with OxideKit - dogfooding the platform
+
+[app]
+id = "com.oxidekit.site"
+name = "OxideKit"
+version = "0.1.0"
+description = "oxidekit.com - Official Website"
+
+[core]
+requires = ">=0.1.0"
+
+[window]
+title = "OxideKit - Native Desktop Apps with Rust"
+width = 1280
+height = 800
+resizable = true
+decorations = true
+
+[build]
+target = ["static", "desktop"]
+
+[dev]
+hot_reload = true

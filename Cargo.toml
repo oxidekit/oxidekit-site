@@ -1,0 +1,19 @@
+[package]
+name = "oxidekit-site"
+version = "0.1.0"
+edition = "2021"
+description = "OxideKit Marketing Website"
+license = "Apache-2.0"
+publish = false
+
+[workspace]
+
+[dependencies]
+oxide-runtime = { path = "../oxidekit-core/crates/oxide-runtime" }
+anyhow = "1.0"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing = "0.1"
+
+[[bin]]
+name = "oxidekit-site"
+path = "src/main.rs"
